@@ -1,0 +1,232 @@
+*{
+	box-sizing: border-box;
+	padding:0;
+	margin:0;
+	border:0px solid black;
+}
+img{
+	max-height: 100%;
+}
+/*header_home section*/
+nav a{
+	text-decoration: none;
+	text-align: right;
+	text-decoration-style: bold;
+	font-size: 20px;
+	letter-spacing: 1.5px;
+}
+.col-3 a{
+	color:orange;
+}
+nav a:hover{
+	background-color: white;
+	color:green;
+	text-transform: capitalize;
+	/* Make it stick, even on scroll, I will not need it here */
+	/*position: fixed;*/
+}
+.headings{
+	text-align: center;
+	padding:150px;
+	/*position: absolute;
+	right: 30px;*/
+}
+.headings2{
+	text-align: center;
+}
+
+/*#home{
+	background-image: url('../images/brian.jpg');
+	height:100vh;
+	background-size:cover;
+	background-position: left;
+	background-repeat:no-repeat;
+}*/
+.col-2{
+	font-size:30px;
+}
+.col-5{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 2%;
+}
+.col-4{
+	font-size: 20px;
+}
+/* about section*/
+#about{
+	background: url('../images/');
+	height: 70vh;
+	background-size:cover;
+	background-position: center;
+	height:80vh;
+	padding:40px;
+}
+.headings2 h1,h2{
+	margin: 20px;
+}
+/*skills*/
+#skills h2{
+	text-align: center;
+	padding:20px;
+}
+#skills{
+	height:80vh;
+	display:flex;
+	justify-content:space-around;
+}
+#skills .grid-spaceAround{
+	margin-top: 30px;
+}
+ul{
+list-style-type:none;
+}
+/*footer_contact*/
+textarea{
+	margin: 10px;
+}
+form{
+	background:;
+	color:black;
+	text-transform: bold;
+	margin:20%;
+}
+button{
+	margin-bottom: 2px;
+	text-align: center;
+	border:1px solid orange;
+	-webkit-appearance: button;
+	-webkit-writing-mode: horizontal-tb;
+}
+
+
+ h2{
+	text-align: center;
+}
+#contact nav{
+position:center;
+}
+input{
+	border:1px solid orange;
+}
+textarea{
+	border:1px solid orange;
+}
+
+label:hover{
+	text-decoration: underline;
+}
+button{
+	width:50%
+}
+button:hover{
+	color: green;
+	text-decoration: underline;
+}
+#contact nav{
+	position:center;
+}
+/*body*/
+body{
+	line-height: 1.5;
+	/*background-color:lightgrey;*/
+	font-family: 'Montserrat', sans-serif;
+	background-color:lightseagreen;
+}
+h1,h2,h3{
+	letter-spacing: 1.5;
+	font-family: 'Spectral SC', serif;
+}
+/*css for sliding pictures*/
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
