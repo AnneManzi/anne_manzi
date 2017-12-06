@@ -1,97 +1,58 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Anne-FrontEnd developer</title>
-		<!--link to Java-->
-		<script src="myScript.js"></script>
-	<!-- link to google fonts-->
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
-		<!-- this is a link to make my web responsive -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<!--this is a link to gridlex -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.6.1/gridlex.min.css"> 
-		<!-- this is to link css and html -->
-		<link rel="stylesheet" type="text/css" href="styles/style.css">
-		<!-- this is a link to add icons-->
-		<script src="https://use.fontawesome.com/5d4bc885ca.js"></script>
-	</head>
-	<body>
-		<header id="home">
-				<nav class="grid-spaceBetween">
-				<div class="col-4">
-					<h1>Hello World,</h1>
+---
+layout: default
+title: Anne | Portfolio
+---
+			<section id="manzi" class="manzi">
+				<div class="abtmnz">
+					<h2 class="abttitle">A bit About me</h2>
+					<p class="abouttext">
+						My full Name is Anne Manzi a lifelong learner.<br> I like to experience new things and taste different things the world offers.<br> I followed my passion, Website Design, and I am working to widen my knowledge in that field.<br> Hardworking and determination are my personal traits.<br>
+						Have ideas that you want to share with the world online?<br>
+						I can help you with that!<br>
+						I am a Front-End Developer with motivation of supporting my community. 
+					</p>
+					<div class="social">
+						<a href="Instagram/anneniyitanga"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						<a href="facebook/anneniyitanga"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+						<a href="Linkedin/anneniyitanamanzi"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+					</div>
 				</div>
-				<div class="col-5">
-					<a href="#home">Home</a>
-					<a href="#about">About</a>
-					<a href="#skills">Skills</a>
-					<a href="#contact">Contact</a>
+				<div class="iphoto">
+					<img src="images/anne.jpg" class="image">
 				</div>
-				</nav>
-				<div class="headings">
-					<h1>I'm Anne,</h1>
-					<h2>A Front-End Developer,</h2>
-					<h2>I make Beautiful Websites</h2>
-				</div>
-				<div class="nextbutton">
-					<a href="#about"><i class="fa fa-arrow-right" aria-hidden="true">Next</i></a>
-				</div>
-		</header>
-		<section id="about">
-			<div class="headings2">
-				<h2>About</h2>
-				<h1>A bit about me</h1>
-			</div>
-			<div class="grid-spaceAround">
-			<div col-6>
-				<img src="images/anne.jpg" style="width:304px;height:228px;">
-			</div>
-			<div col-5>
-				<p>
-					My full Name is Anne Manzi a lifelong learner.<br> I like to experience new things to taste different things the world offers.<br> I followed my passion, Website Design, and I am working to develop my knowledge in that field.<br> Hardworking and determination are my personal traits.<br>
-					Have ideas that you want to share with the world online?<br>
-					I can help you with that!<br>
-					I am a freelancer Front-End Developer who likes to learn new things and use that to provide a support in my community. 
-				</p>
-			</div>
-			</div>
+
+
 		</section>
-		<section id="skills">
-			<div>
-				<h2>What I do</h2>
+		<section id="skills" class="grid">
+
+			
 				<!--for the sliding pictures-->
-			<div class="slideshow-container col-6">
-				<div class="mySlides fade">
-					<div class="numbertext">1 / 3</div>
-					<img src="code.jpg" style="width:100%">
-					<div class="text">Drawing Wireframes</div>
+			<div class="col-6 work">
+				
+				<div class="slideshow-container">
+						<div class="mySlides fade">
+							<div class="numbertext">1 / 3</div>
+							<img src="../images/code.jpg">
+							<div class="text">Drawing Wireframes</div>
+						</div>
+							
+						<div class="mySlides fade">
+							<div class="numbertext">2 / 3</div>
+							<img src="../images/code2.jpg">
+							<div class="text">Writting code</div>
+						</div>
+						<div class="mySlides fade">
+							<div class="numbertext">3 / 3</div>
+							<img src="../images/code1.jpg">
+							<div class="text">Styling the Code</div>
+						</div>
 				</div>
-					
-				<div class="mySlides fade">
-					<div class="numbertext">2 / 3</div>
-					<img src="code2.jpg" style="width:100%">
-					<div class="text">Writting codes</div>
-				</div>
-				<div class="mySlides fade">
-					<div class="numbertext">3 / 3</div>
-					<img src="code1.jpg" style="width:100%">
-					<div class="text">Styling the Codes</div>
-				</div>
-				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  				<a class="next" onclick="plusSlides(1)">&#10095;</a>
-			</div>
-			<br>
-			<div style="text-align:center">
-			  <span class="dot" onclick="currentSlide(1)"></span> 
-			  <span class="dot" onclick="currentSlide(2)"></span> 
-			  <span class="dot" onclick="currentSlide(3)"></span> 
 			</div>
 
-			<div class="grid-spaceAround">
-				<div class="col-4">
-					<p>I use different designers' tools to structure and create beautiful websites</p>
-				</div>
-				<div class="col-7">
+			<div class="col-6">
+				<h2 class="whatido">What I do</h2>
+					<p>I use different designers' tools to structure <br>and create beautiful websites</p>
+					<br>
 					<ul>
 						<li>Structuring your website</li>
 						<li>Adding beautiful colors</li>
@@ -100,29 +61,7 @@
 						<li>Making it easy to navigate</li>
 						<li>Etc.....</li>
 					</ul>
-				</div>
-				<div class="col-7">
 					<p>Your website will look amazing on all devices</p>
-				</div>
 			</div>
-		</section>
-		<footer id="contact">
-			<h2>Get in Touch</h2>
-			<form class="grid-center" method="POST" action="http://formspree.io/annemanzi2gmail.com">
-			<label class="col-7">Your Name</label>
-			<input class="col-7" type="name" name="name">
-			<label class="col-7">Your Email</label>
-			<input class="col-7" type="email" name="email">
-			<label class="col-7">Your Message</label>
-			<textarea class="col-7" name="message"></textarea>
-			<button class="col-7" type="submit">Send</button>
-			</form>
-			<nav>
-				<a href="Instagram/anneniyitanga"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-				<a href="facebook/anneniyitanga"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-			</nav>
-		</footer>
-		
+		</section>	
 
-	</body>
-</html>

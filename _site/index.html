@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Anne | Portfolio</title>
+	<!-- link to google fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+		<!-- this is a link to make my web responsive -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<!--this is a link to gridlex -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.6.1/gridlex.min.css"> 
+		<!-- Link to sticky-nav CSS -->
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.2.5/gridlex.min.css">
+		<!-- this is to link css and html -->
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		<!-- this is a link to add icons-->
+		<script src="https://use.fontawesome.com/5d4bc885ca.js"></script>
+	</head>
+	<body>
+		<header id="home">
+		<!--Mobile Navigation Starts here-->
+			<div id="container" class="mob-show">
+    <div class="col-6">
+    </div>
+    <div class="col-6">
+      <nav>
+        <a href="#home" title="Home" class="toggle-mobile-menu">
+          <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+        </a>
+      </nav>
+    </div>
+
+  <nav id="mobile-navigation" class="grid-middle-center-noBottom-noGutter bg-yellow animate">
+      <a class="col-12 center toggle-mobile-menu" href="#home">
+        <i class="fa fa-times" aria-hidden="true"></i>    
+      </a>
+      <a class="col-12 center" href="#home" class="toggle-mobile-menu">Home</a>
+      <a class="col-12 center" href="#home" class="toggle-mobile-menu">About</a>
+      <a class="col-12 center" href="#home" class="toggle-mobile-menu">Portfolio</a>
+      <a class="col-12 center" href="#home" class="toggle-mobile-menu">Contact</a>
+  </nav>
+  
+</div> <!-- #container -->
+		<!-- Mobile Navigation Ends here-->
+		<div class="welcome grid">
+			<div class="col-4"></div>
+				<img class="col-4 startimg" src="/images/welcome1.png">
+			<div class="col-4"></div>
+		</div>
+		<div  class="z-index">
+			
+			<nav id="sticky-button" class="navigation mob-hide">
+				<div>
+					<a href="#home">Home</a>
+					<a href="#manzi">About</a>
+					<a href="#skills">Skills</a>
+					<a href="#contact">Contact</a>
+				</div>
+			</nav>
+		</div>
+				<div class="grid">
+					<div class="col-4"></div>
+					<div class="col-4 headings">
+					<h1>I'm Anne,</h1>
+					<h3>A Front-End Developer,</h3>
+					<h3>I make Beautiful Websites</h3>
+					</div>
+					<div class="col-4"></div>
+				</div>
+				<div class="nextbutton">
+					<a href="#manzi"><i class="fa fa-arrow-right" aria-hidden="true">Next</i></a>
+				</div>
+			</div>
+		</header>
+					<section id="manzi" class="manzi">
+				<div class="abtmnz">
+					<h2 class="abttitle">A bit About me</h2>
+					<p class="abouttext">
+						My full Name is Anne Manzi a lifelong learner.<br> I like to experience new things and taste different things the world offers.<br> I followed my passion, Website Design, and I am working to widen my knowledge in that field.<br> Hardworking and determination are my personal traits.<br>
+						Have ideas that you want to share with the world online?<br>
+						I can help you with that!<br>
+						I am a Front-End Developer with motivation of supporting my community. 
+					</p>
+					<div class="social">
+						<a href="Instagram/anneniyitanga"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						<a href="facebook/anneniyitanga"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+						<a href="Linkedin/anneniyitanamanzi"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				<div class="iphoto">
+					<img src="images/anne.jpg" class="image">
+				</div>
+
+
+		</section>
+		<section id="skills" class="grid">
+
+			
+				<!--for the sliding pictures-->
+			<div class="col-6 work">
+				
+				<div class="slideshow-container">
+						<div class="mySlides fade">
+							<div class="numbertext">1 / 3</div>
+							<img src="../images/code.jpg">
+							<div class="text">Drawing Wireframes</div>
+						</div>
+							
+						<div class="mySlides fade">
+							<div class="numbertext">2 / 3</div>
+							<img src="../images/code2.jpg">
+							<div class="text">Writting code</div>
+						</div>
+						<div class="mySlides fade">
+							<div class="numbertext">3 / 3</div>
+							<img src="../images/code1.jpg">
+							<div class="text">Styling the Code</div>
+						</div>
+				</div>
+			</div>
+
+			<div class="col-6">
+				<h2 class="whatido">What I do</h2>
+					<p>I use different designers' tools to structure <br>and create beautiful websites</p>
+					<br>
+					<ul>
+						<li>Structuring your website</li>
+						<li>Adding beautiful colors</li>
+						<li>Arranging the content of a website</li>
+						<li>Aligning text</li>
+						<li>Making it easy to navigate</li>
+						<li>Etc.....</li>
+					</ul>
+					<p>Your website will look amazing on all devices</p>
+			</div>
+		</section>	
+
+
+		<footer id="contact" class="getintouch">
+			
+			<h2>Get in Touch</h2>
+			<h2>Fill out the Form</h2>
+			<div class="contactform">
+			<form class="grid-center" method="POST" action="http://formspree.io/annemanzi2gmail.com">
+			<label class="col-7">Your Name</label>
+			<input class="col-7" type="name" name="name">
+			<label class="col-7">Your Email</label>
+			<input class="col-7" type="email" name="email">
+			<label class="col-7">Your Message</label>
+			<textarea class="col-7" name="message"></textarea>
+			<button class="col-7" type="submit">Send</button>
+			</form>
+			</div>
+			<p>Or contact me here:</p>
+			<nav class="socialmedia">
+				<a href="Instagram/anneniyitanga"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+				<a href="facebook/anneniyitanga"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+				<a href="Linkedin/anneniyitanamanzi"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+			</nav>
+		</footer>
+		<!-- link to jquery-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- link for sticky element -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js"></script>
+		<!--to javascript-->
+		<script src="/javascript/scripts.js"></script>
+	</body>
+</html>

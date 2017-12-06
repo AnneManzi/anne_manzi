@@ -2,86 +2,206 @@
 	box-sizing: border-box;
 	padding:0;
 	margin:0;
-	border:0px solid black;
+	transition: all 300ms ease-in-out;
 }
+body{
+	line-height: 1.5;
+	/*background-color:lightgrey;*/
+	max-width: 100vw;
+
+	font-family: 'Nunito', sans-serif;
+}
+h1,h2,h3{
+	letter-spacing: 1.5;
+	font-family: 'Montserrat', sans-serif;
+}
+
 img{
-	max-height: 100%;
+	max-width:100%;
+	margin: 0;
 }
 /*header_home section*/
-nav a{
+.navigation,a{
 	text-decoration: none;
-	text-align: right;
-	text-decoration-style: bold;
-	font-size: 20px;
-	letter-spacing: 1.5px;
+	color: white;
+	letter-spacing: 4px;
+	padding: 10px;
 }
-.col-3 a{
-	color:orange;
+.navigation,a:hover{
+	background: white;
+	color: purple;
 }
+.welcome{
+	padding-top: 2px;
+}
+
+
 nav a:hover{
-	background-color: white;
+	/*background-color: white;*/
 	color:green;
 	text-transform: capitalize;
 	/* Make it stick, even on scroll, I will not need it here */
 	/*position: fixed;*/
 }
-.headings{
+.navigation{
 	text-align: center;
-	padding:150px;
-	/*position: absolute;
-	right: 30px;*/
-}
-.headings2{
-	text-align: center;
+	background-color: purple;
+    line-height: 1.5;
+    font-style: normal;
+    word-spacing: 70px;
+    position: relative;
 }
 
-/*#home{
-	background-image: url('../images/brian.jpg');
+.z-index{
+	position: relative;
+	z-index: 100;
+}
+/*Styles for mobile navigation*/
+/* MOBILE NAV */
+.mob-show{
+	display:none;
+}
+#mobile-navigation{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(.96);
+}
+#container.mobile-menu-visible #mobile-navigation{
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* HELPERS */
+.padding{
+  padding: 40px;
+}
+.margin-top-bottom{
+  margin: 40px 0;
+}
+.round-corners{
+  border-radius: 4px;
+}
+.bg-yellow{
+  background-color: #f1c40f;
+}
+.center{
+  text-align: center;
+}
+.animate{
+  transition: all 172ms ease-out;
+}
+/*Styles for mobile navigation end here*/
+#home{
+	background-image: url('../images/larm.jpg');
 	height:100vh;
 	background-size:cover;
 	background-position: left;
 	background-repeat:no-repeat;
-}*/
-.col-2{
-	font-size:30px;
 }
-.col-5{
-	display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 2%;
+
+.headings{
+	margin-top: 40px;
+	background-color: grey;
+	text-align: center;
 }
-.col-4{
-	font-size: 20px;
+.nextbutton{
+	text-align: center;
+	margin-top: 60px;
 }
 /* about section*/
 #about{
-	background: url('../images/');
-	height: 70vh;
-	background-size:cover;
-	background-position: center;
 	height:80vh;
 	padding:40px;
+	background-color: lightseagreen;
 }
-.headings2 h1,h2{
-	margin: 20px;
+.i_me img{
+	width: 500px;
 }
+.abtxt h2{
+	color:purple;
+	font-size:30px;
+	padding:2px;
+}
+
 /*skills*/
-#skills h2{
-	text-align: center;
-	padding:20px;
+
+.whatido{
+	text-align:center;
+	margin:25px;
+	font-size: 3em;
+	color:white;
 }
 #skills{
-	height:80vh;
-	display:flex;
-	justify-content:space-around;
+	background-color: purple;
+	color: #ddd;
+	text-align: center;
+	padding: 0;
+	height: 70vh;
 }
-#skills .grid-spaceAround{
-	margin-top: 30px;
+#skills p{
+	margin-top:5%;
+}
+h2{
+	color:purple;
 }
 ul{
 list-style-type:none;
 }
+li{
+	font-weight: 700;
+}
+/*New About*/
+.manzi{
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	height: 400px;
+	padding-left: 20px;
+}
+
+.abtmnz{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.social {
+	display: flex;
+	justify-content: space-between;
+}
+
+.social a {
+	margin: 0 30px;
+	font-size: 2em;
+	color: purple;
+	transition: 300ms all ease-in-out;
+}
+
+.social a:hover {
+	color: black;
+	transform: scale(1.1);
+}
+.abttitle {
+	font-size: 3em;
+}
+
+.abouttext{
+	text-align: center;
+	padding: 10px 50px 20px 50px;
+}
+
+.image{
+	height: 100%;
+}
+
 /*footer_contact*/
 textarea{
 	margin: 10px;
@@ -99,14 +219,12 @@ button{
 	-webkit-appearance: button;
 	-webkit-writing-mode: horizontal-tb;
 }
-
-
- h2{
+.socialmedia{
 	text-align: center;
+	line-height: 2;
+	font-size: 40px;
 }
-#contact nav{
-position:center;
-}
+
 input{
 	border:1px solid orange;
 }
@@ -123,110 +241,135 @@ button{
 button:hover{
 	color: green;
 	text-decoration: underline;
+	background: violet;
 }
-#contact nav{
-	position:center;
+#contact{
+	margin-top: 60px;
+	background:chocolate;
 }
-/*body*/
-body{
-	line-height: 1.5;
-	/*background-color:lightgrey;*/
-	font-family: 'Montserrat', sans-serif;
-	background-color:lightseagreen;
+.getintouch h2{
+	margin-top: 20px;
+	color:purple;
+	text-align:center;
 }
-h1,h2,h3{
-	letter-spacing: 1.5;
-	font-family: 'Spectral SC', serif;
+footer{
+	padding-top: 80px;
 }
+footer p{
+	text-align: center;
+}
+
 /*css for sliding pictures*/
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-.mySlides {
-    display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: black;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor:pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+	/* Slideshow container */
+	.work{
+		padding:0;
+	}
+	.slideshow-container {
+	  max-width: 100%;
+	  position: relative;
+	  margin: auto;
+	  padding:0;
+	  height: 400px;
+	  overflow: hidden;
+	}
+	
+	/*SLider Image Styles*/
+	.slider-img {
+		/*width: 100%;*/
+		height: 400px;
+	}
+	
+	.mySlides {
+	    display: none;
+	}
+	
+	/* Next & previous buttons */
+	.prev, .next {
+	  cursor: pointer;
+	  position: absolute;
+	  top: 50%;
+	  width: auto;
+	  margin-top: -22px;
+	  padding: 16px;
+	  color: white;
+	  font-weight: bold;
+	  font-size: 18px;
+	  transition: 0.6s ease;
+	  border-radius: 0 3px 3px 0;
+	}
+	
+	/* Position the "next button" to the right */
+	.next {
+	  right: 0;
+	  border-radius: 3px 0 0 3px;
+	}
+	
+	/* On hover, add a black background color with a little bit see-through */
+	.prev:hover, .next:hover {
+	  background-color: rgba(0,0,0,0.8);
+	}
+	
+	/* Caption text */
+	.text {
+	  color: white;
+	  font-weight:bold;
+	  font-size: 15px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  bottom: 8px;
+	  width: 100%;
+	  text-align: center;
+	}
+	
+	/* Number text (1/3 etc) */
+	.numbertext {
+	  color: #f2f2f2;
+	  font-size: 12px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  top: 0;
+	}
+	
+	/* The dots/bullets/indicators */
+	.dot {
+	  cursor:pointer;
+	  height: 15px;
+	  width: 15px;
+	  margin: 0 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+	
+	.active, .dot:hover {
+	  background-color: #717171;
+	}
+	
+	/* Fading animation */
+	.fade {
+	  -webkit-animation-name: fade;
+	  -webkit-animation-duration: 1.5s;
+	  animation-name: fade;
+	  animation-duration: 1.5s;
+	}
+	
+	@-webkit-keyframes fade {
+	  from {opacity: .4} 
+	  to {opacity: 1}
+	}
+	
+	@keyframes fade {
+	  from {opacity: .4} 
+	  to {opacity: 1}
+	}
+/*RESPONSIVE STYLES */
+@media all and (max-width:940px){
+	.mob-hide{
+		display:none;
+	}
+	.mob-show{
+		display:block;
+	}
 }
