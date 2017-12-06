@@ -35,7 +35,10 @@ img{
 	padding-top: 2px;
 }
 
-
+.txt{
+	color:#ddd;
+	font-size: 100px;
+}
 nav a:hover{
 	/*background-color: white;*/
 	color:green;
@@ -89,7 +92,7 @@ nav a:hover{
   border-radius: 4px;
 }
 .bg-yellow{
-  background-color: #f1c40f;
+  background-color: #ddd;
 }
 .center{
   text-align: center;
@@ -102,62 +105,22 @@ nav a:hover{
 	background-image: url('../images/larm.jpg');
 	height:100vh;
 	background-size:cover;
-	background-position: left;
+	background-position:;
 	background-repeat:no-repeat;
 }
 
 .headings{
 	margin-top: 40px;
-	background-color: grey;
+	background-color: #ddd;
 	text-align: center;
+	font-size: 30px;
 }
 .nextbutton{
 	text-align: center;
 	margin-top: 60px;
 }
-/* about section*/
-#about{
-	height:80vh;
-	padding:40px;
-	background-color: lightseagreen;
-}
-.i_me img{
-	width: 500px;
-}
-.abtxt h2{
-	color:purple;
-	font-size:30px;
-	padding:2px;
-}
 
-/*skills*/
-
-.whatido{
-	text-align:center;
-	margin:25px;
-	font-size: 3em;
-	color:white;
-}
-#skills{
-	background-color: purple;
-	color: #ddd;
-	text-align: center;
-	padding: 0;
-	height: 70vh;
-}
-#skills p{
-	margin-top:5%;
-}
-h2{
-	color:purple;
-}
-ul{
-list-style-type:none;
-}
-li{
-	font-weight: 700;
-}
-/*New About*/
+/*About section*/
 .manzi{
 	display: flex;
 	justify-content: space-between;
@@ -202,6 +165,37 @@ li{
 	height: 100%;
 }
 
+/*end of about section*/
+
+/*skills*/
+
+.whatido{
+	text-align:center;
+	margin:25px;
+	font-size: 3em;
+	color:white;
+}
+#skills{
+	background-color: purple;
+	color: #ddd;
+	text-align: center;
+	padding: 0;
+	height: 70vh;
+}
+#skills p{
+	margin-top:5%;
+}
+h2{
+	color:purple;
+}
+ul{
+list-style-type:none;
+}
+li{
+	font-weight: 700;
+}
+
+
 /*footer_contact*/
 textarea{
 	margin: 10px;
@@ -224,6 +218,9 @@ button{
 	line-height: 2;
 	font-size: 40px;
 }
+.socialmedia a{
+	color:purple;
+}
 
 input{
 	border:1px solid orange;
@@ -232,9 +229,6 @@ textarea{
 	border:1px solid orange;
 }
 
-label:hover{
-	text-decoration: underline;
-}
 button{
 	width:50%
 }
@@ -243,10 +237,7 @@ button:hover{
 	text-decoration: underline;
 	background: violet;
 }
-#contact{
-	margin-top: 60px;
-	background:chocolate;
-}
+
 .getintouch h2{
 	margin-top: 20px;
 	color:purple;
@@ -371,5 +362,23 @@ footer p{
 	}
 	.mob-show{
 		display:block;
+	}
+}
+
+@media all and (max-width:850px){
+	.slideshow-container{
+		
+	}
+	#manzi{
+		height:100vh;
+	}
+	.image{
+		display: none;
+	}
+	.social{
+		display: none;
+	}
+	.fig{
+		display:none;
 	}
 }
